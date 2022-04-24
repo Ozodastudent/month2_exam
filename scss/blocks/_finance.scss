@@ -1,0 +1,60 @@
+.finance {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-around;
+  &_card {
+    width: 350px;
+
+    &_logo {
+      margin-left: 120px;
+      margin-bottom: 30px;
+    }
+    &_title {
+      font-family: "Public Sans", sans-serif;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 25px;
+      text-align: center;
+      letter-spacing: -0.138462px;
+      color: #36536b;
+    }
+    &_desc {
+      width: 320px;
+      font-family: "Public Sans", sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 25px;
+      text-align: center;
+      letter-spacing: -0.115385px;
+      color: #6c8294;
+      margin-top: 16px;
+    }
+  }
+}
+@media screen and(max-width:768px) {
+  .finance {
+    display: flex;
+    padding-right: 10px;
+    padding-left: 10px;
+    &_card {
+      width: 280px;
+      &_logo {
+        margin-left: 65px;
+      }
+      &_desc {
+        width: 223px;
+        height: 150px;
+      }
+    }
+  }
+}
+@media screen and(max-width:575px) {
+  .finance {
+    display: flex;
+    flex-direction: column;
+    margin-left: 90px;
+    padding-bottom: 30px;
+  }
+}

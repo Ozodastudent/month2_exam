@@ -1,3 +1,22 @@
+@font-face {
+  font-family: "Public Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  src: url(../exam_fonts2/PublicSans-Bold.ttf);
+}
+@font-face {
+  font-family: "Public Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  src: url(../exam_fonts2/PublicSans-Regular.ttf);
+}
+@font-face {
+  font-family: "DM Serif Display", serif;
+  font-style: normal;
+  font-weight: 400;
+  src: url(../exam_fonts2/DMSerifDisplay-Regular.ttf);
+}
+
 html {
   box-sizing: border-box;
 }
@@ -8,8 +27,7 @@ html {
 }
 body {
   font-size: 16px;
-  font-family: sans-serif;
-  background-color: antiquewhite;
+  background-color: #edf3f8;
 }
 .visually-hidden {
   clip: rect(0 0 0 0);
@@ -21,7 +39,17 @@ body {
   width: 1px;
 }
 .container {
-  max-width: 1280px;
-  padding: 0 30px;
+  max-width: 1440px;
+  padding: 0 20px 0 105px;
   margin: auto;
+}
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 20px 10px 0 90px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .container {
+    padding: 10px 10px 0 10px;
+  }
 }

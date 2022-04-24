@@ -1,0 +1,50 @@
+.implement {
+  margin-top: 100px;
+  display: flex;
+  padding-left: 60px;
+  &_text {
+    margin-top: 110px;
+    width: 445px;
+    margin-left: 120px;
+    &_title {
+      font-family: "DM Serif Display", serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 48px;
+      line-height: 56px;
+      letter-spacing: -0.369231px;
+      color: #36536b;
+      margin-bottom: 24px;
+    }
+    &_desc {
+      font-family: "Public Sans", sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 28px;
+      color: #6c8294;
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .implement {
+    display: flex;
+    flex-direction: column;
+    &_text {
+      width: 573px;
+      text-align: center;
+    }
+  }
+}
+@media screen and (max-width: 575px) {
+  .implement {
+    padding-left: 0;
+    &_img {
+      margin-left: -20px;
+    }
+    &_text {
+      width: 400px;
+      margin-left: 0px;
+    }
+  }
+}

@@ -1,0 +1,107 @@
+.about {
+  margin-top: 275px;
+  background-color: #1b262f;
+  display: flex;
+  padding-top: 100px;
+  padding-bottom: 100px;
+
+  &_text {
+    width: 445px;
+  }
+
+  &_title {
+    font-family: "DM Serif Display", serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 56px;
+    letter-spacing: -0.369231px;
+    color: #fbfcfe;
+  }
+  &_desc {
+    font-family: "Public Sans", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 28px;
+    color: #fbfcfe;
+    opacity: 0.7;
+    margin-top: 24px;
+    margin-bottom: 30px;
+  }
+  &_link {
+    text-decoration: none;
+    font-family: "Public Sans", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: -0.115385px;
+    color: #fbfcfe;
+    padding: 10px 20px;
+    border: 1px solid white;
+    border-radius: 24px;
+  }
+  &_image {
+    margin-left: 131px;
+    margin-top: 80px;
+    display: flex;
+  }
+  &_mobile_img {
+    display: none;
+  }
+  &_circle {
+    position: absolute;
+    width: 780px;
+    height: 780px;
+    left: -55px;
+    top: 753px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .about {
+    display: flex;
+    flex-direction: column-reverse;
+
+    // &_circle {
+    //   position: absolute;
+    //   width: 740px;
+    //   height: 700px;
+    //   left: -6px;
+    //   top: 528px;
+    //   overflow: hidden;
+    //   mix-blend-mode: normal;
+    //   background-color: #36536b;
+    //   border-bottom-left-radius: 50%;
+    //   border-bottom-right-radius: 50%;
+
+    //   opacity: 0.15;
+    // }
+    &_circle {
+      left: -55px;
+      top: 930px;
+    }
+    &_image {
+      margin-left: 0;
+      margin-top: 40px;
+      margin-bottom: 50px;
+    }
+    &_link {
+      margin-left: 160px;
+    }
+  }
+}
+@media screen and (max-width: 575px) {
+  .about {
+    &_image {
+      display: none;
+    }
+    &_mobile_img {
+      display: flex;
+    }
+    &_circle {
+      top: 1110px;
+    }
+  }
+}
